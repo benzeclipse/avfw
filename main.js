@@ -4,15 +4,7 @@
 // Banchop Ben Kangdouangnhot
 
 
-// Wait until DOM is ready
-window.addEventListener( "DOMContentLoaded", function() {
-
-	// getElementById function
-	function  $( clear ) {
-	var ticks = document.getElementById( clear );
-	return ticks;
-}
-
+$("#sample").on("click", funtion(){
 
 
 
