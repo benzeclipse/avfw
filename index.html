@@ -1,24 +1,150 @@
-<!DOCTYPE html>
-<!-- Banchop Ben Kangdouangnhot, Term 1308, AVFW -->
-<html>
-	<head>
-    	<title>Ticket Hub</title>
-    	<link rel="stylesheet" href="main.css" type="text/css" />
-   		<meta charset="UTF-8">
-   		<meta name = "MobileOptimized" content= "320" />
-  		<meta name = "robot" content="index, follow" />
-  		<meta name = "HandheldFriendly" content="True" />
-  		<meta name = "viewport" content="user-scalable=no, width=device-width"/>
-	</head>
-	<body>
-		<section id="sample">
-   		 	<h1>Sell now!</h1> 
-   			<h2>Sell Tickets!</h2>   
-			<p>Sell tickets and get the most out of your money. Fast, easy, and a simple way to sell tickets!</p>
-		<nav>
-	 		<a href="additem.html"> Start Selling today! </a> </li>
-		</nav>
-		</section>
-		<script type="text/javascript" src="main.js"></script>
-	</body>
+<!-- AVFW
+ Term 1308
+ Banchop Ben Kangdouangnhot
+ Project 2 -->
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Ticket Hub</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on" />
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" /> 
+	<link rel="stylesheet" href="css/stylesVfw.css" /> 
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	
+	 <!-- class for resizing images -->
+	<style>
+		img.fullscreen {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	</style>
+  </head>
+<body>
+
+
+	<!-- Home Page -->
+		<div data-role="page" id="homes">
+			<div data-role="header" data-position="fixed">
+				<h1>TicketSales</h1>
+			</div>	
+			
+				<p align="center">
+					Buy, sell, and Trade now... Click on link below!
+				</p>
+			
+			
+				<ul data-role="listview"  data-theme="e" >
+		 			<li>
+		 				<a href="add.html" data-ajax="false"  >
+		 			    <p style="color: black" align="center"><br><b>SELL NOW!</b></br></p>
+		 			    <p style="color: black" align="center"><b>TRADE NOW!</b></p>
+		 			    <p style="color: red" align="center"><b>CLICK HERE!</b></p>
+		 			    </a>
+		 			</li>
+				</ul>
+
+						
+			<!-- Adding nicer grids 	-->
+			<div class="ui-grid-a" >
+			
+				<div class="ui-block-a" >
+					<a href="#errors"><img src="images/allsports.jpg"/></a>
+					<div class="homegrid"></div>
+				</div>	
+				
+				<div class="ui-block-b" >
+					<a href="#errors"><img src="images/allsports.jpg"/></a>
+					<div class="homegrid"></div>
+				</div>	
+					<div class="ui-block-a" >
+						<a href="#errors"><img src="images/panthers.jpg"/></a>
+						<div class="homegrid"></div>
+					</div>
+						
+					<div class="ui-block-b" >
+						<a href="#errors"><img src="images/contact.jpeg"/></a>
+						<div class="homegrid"></div>
+					</div>	
+					
+			</div>
+			
+			<style>
+				.ui-grid-a img{
+					width: 100%;
+					height: auto;
+					margin: 0px;
+			}
+			.ui-grid-a div{
+				padding:3px;
+			}
+			.homegrid{
+				width:100:
+				text-align:center;
+				font-size:12px;
+				margin-top:-5px;
+			}
+			</style> 	
+
+	
+			 <div data-role="footer" data-position="fixed">
+      	 		 <div data-role="navbar">
+         	  		 <ul>
+              	  		 <li><a href="#homes" data-icon="home" class="ui-btn-active">Home</a></li>
+               			 <li><a href="#errors" data-icon="gear">About Us</a></li>
+           			 </ul>
+       			 </div> <!--navbar -->
+			 </div> <!--footer -->  
+			
+	   </div>	
+
+	  
+				
+	<!-- error page -->   
+	<div data-role="page" id="errors" data-id="displayingData" > 
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			
+			 <h1 style="text-align:left; margin-left:10px;">TicketSale</h1><a href=""  data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
+		</div>
+
+			<div><p align="center">Under Construction....</p></div>
+		
+		
+  		 <div data-role="footer" data-position="fixed">
+      	 	 <div data-role="navbar">
+         	  	 <ul>
+              	  	 <li><a href="#homes" data-icon="home" class="ui-btn-active">Home</a></li>
+               		 <li><a href="#error" data-icon="gear">About Us</a></li>
+           		 </ul>
+       		 </div><!-- /navbar -->
+		</div><!-- /footer -->   
+	</div>
+
+
+
+
+
+	<!-- JavaScript under here -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
 </html>

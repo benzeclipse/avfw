@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Banchop Ben Kangdouangnhot, Term 1308, AVFW -->
+<html>
+	<head>
+    	<title>Ticket Hub</title>
+    	<link rel="stylesheet" href="main.css" type="text/css" />
+   		<meta charset="UTF-8">
+   		<meta name = "MobileOptimized" content= "320" />
+  		<meta name = "robot" content="index, follow" />
+  		<meta name = "HandheldFriendly" content="True" />
+  		<meta name = "viewport" content="user-scalable=no, width=device-width"/>
+	</head>
+	
+	
+	<body onload = "process()">
+	<h1>TicketSales</h1>
+	  <form  action="#" id="form">
+			<fieldset>
+		<legend>Check Product Availability</legend>
+		
+				<p>Enter tickets:</p>
+				<input type="text" id="userInput" placeholder="ex. nfl"/>
+				<div id="underInput"></div>
+			</fieldset>
+	
+			<fieldset>
+				 <p onclick="alert("works")">Please enter your name: </p>
+				 <p><input type="text" id="name" placeholder="enter name..."/>
+	 
+				<p>Concerns:</p>
+				<p><textarea id="string" placeholder="concerns..."/></textarea>
+				<input id="button" type="button" value="Submit"/></p> 
+			
+		
+			<div id="feedback"></div>
+			<div id="messages"></div>
+			</fieldset>
+			
+	
+		
+
+   <form action="#" method = "post" id="forms">
+       <fieldset>
+			<legend>Quick Info</legend>
+			<ul id="errors" ></ul>
+			<ul>
+				<li><label for="team"> Desired Sport:  </label><input type = "text" id = "sport" placeholder="enter favorite sport"/></li>
+ 				<li><label for="tname"> Team Name: </label><input type = "text" id = "tname" placeholder="enter team name"/></li>
+  	  		</ul>
+	     
+
+
+			<nav>
+				<input type="button" value="Save Info" id="saveValues" </>
+	  			<a href="index.html" id="back" style="display:none;"> Back </a>	
+	  		</nav>
+	  		
+   			<nav>
+   				<br><a href="#" id="Info"> Show Info</a></br>
+				<a href="add.html" id="clearData">Clear Data</a>
+			</nav>
+	  			    			
+			
+		</fieldset>
+		</form>
+	
+	<a href="index.html" id="home">Home</a>
+	<a href="add.html" id="home">Back</a>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	</body>
+</html>
+
